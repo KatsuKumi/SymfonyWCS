@@ -7,6 +7,9 @@ namespace WCS\CoavBundle\Entity;
  */
 class Reservation
 {
+    public function __toString(){
+        return $this->name;
+    }
     /**
      * @var int
      */

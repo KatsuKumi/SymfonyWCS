@@ -7,6 +7,9 @@ namespace WCS\CoavBundle\Entity;
  */
 class PlaneModel
 {
+    public function __toString(){
+        return $this->name;
+    }
     /**
      * @var int
      */

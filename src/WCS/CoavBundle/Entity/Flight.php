@@ -8,7 +8,7 @@ namespace WCS\CoavBundle\Entity;
 class Flight
 {
     public function __toString(){
-        return $this->name;
+        return '';
     }
     /**
      * @var int
@@ -169,5 +169,34 @@ class Flight
     public function getTakeofTime()
     {
         return $this->takeofTime;
+    }
+    /**
+     * @var \WCS\CoavBundle\Entity\PlaneModel
+     */
+    private $plane;
+
+
+    /**
+     * Set plane
+     *
+     * @param \WCS\CoavBundle\Entity\PlaneModel $plane
+     *
+     * @return Flight
+     */
+    public function setPlane(\WCS\CoavBundle\Entity\PlaneModel $plane = null)
+    {
+        $this->plane = $plane;
+
+        return $this;
+    }
+
+    /**
+     * Get plane
+     *
+     * @return \WCS\CoavBundle\Entity\PlaneModel
+     */
+    public function getPlane()
+    {
+        return $this->plane;
     }
 }

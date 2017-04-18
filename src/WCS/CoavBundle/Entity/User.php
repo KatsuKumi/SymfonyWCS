@@ -8,7 +8,7 @@ namespace WCS\CoavBundle\Entity;
 class User
 {
     public function __toString(){
-        return $this->name;
+        return '';
     }
     /**
      * @var int

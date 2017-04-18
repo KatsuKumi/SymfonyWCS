@@ -18,8 +18,8 @@ WCS\CoavBundle\Entity\Reservation:
 
     manyToMany:
         passengers:
-            targetEntity: User
-            mappedBy: reservation
+            targetEntity: WCS\CoavBundle\Entity\User
+            mappedBy: reservations
 
     manyToOne:
         flight:
